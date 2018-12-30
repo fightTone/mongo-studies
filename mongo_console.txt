@@ -1,0 +1,27 @@
+> show dbs
+admin       0.000GB
+config      0.000GB
+local       0.000GB
+mydatabase  0.000GB
+sample      0.000GB
+sample_db   0.000GB
+
+> use sample_db
+switched to db sample_db
+
+> show collections
+Courses
+Students
+
+> db.Courses.find({})
+{ "_id" : 1, "cname" : "BSCS" }
+{ "_id" : 2, "cname" : "BSCA" }
+{ "_id" : 3, "cname" : "IT" }
+{ "_id" : 4, "cname" : "IS" }
+
+> db.Students.find({})
+{ "_id" : 1, "yr_lvl" : " 1", "name" : "John" }
+{ "_id" : 2, "yr_lvl" : "3", "name" : "Peter" }
+{ "_id" : 3, "yr_lvl" : "3", "name" : "Amy" }
+{ "_id" : 4, "yr_lvl" : "4", "name" : "Hannah" }
+>
